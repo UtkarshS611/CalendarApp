@@ -1,11 +1,22 @@
-import Calendar from "./components/Calendar/Calendar";
+import Calendar from './components/Calender';
+import Sidebar from './components/Sidebar';
+import { CalendarProvider } from './context/CalendarContext';
 
-const App = () => {
+function App() {
   return (
-    <div className="m-0 md:ml-[20rem] p-4 h-screen">
-      <Calendar />
-    </div>
+    <CalendarProvider>
+      <div className="h-screen bg-gray-100">
+        <div className="w-full h-full mx-auto flex lg:flex-row flex-col gap-10">
+          <div>
+            <Sidebar />
+          </div>
+          <div className="lg:col-span-2 w-full flex items-center justify-center">
+            <Calendar />
+          </div>
+        </div>
+      </div>
+    </CalendarProvider>
   );
-};
+}
 
 export default App;
