@@ -10,7 +10,7 @@ function App() {
           <div>
             <Sidebar />
           </div>
-          <div className="lg:col-span-2 w-full flex items-center justify-center">
+          <div className="w-full flex items-center justify-center">
             <Calendar />
           </div>
         </div>

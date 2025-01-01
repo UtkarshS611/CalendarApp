@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from 'react';
 import { Event, CalendarContextType } from '../types';
-import { useLocalStorage } from '@/hooks/UseLocalStorage';
+import { useLocalStorage } from '@/hooks/useLocalStorage'; 
 
 const CalendarContext = createContext<CalendarContextType | undefined>(undefined);
 
